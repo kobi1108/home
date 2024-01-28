@@ -81,7 +81,7 @@ onMounted(() => {
   // 屏蔽右键
   document.oncontextmenu = () => {
     ElMessage({
-      message: "为了浏览体验，本站禁用右键",
+      message: "爲了提升瀏覽體驗，本站已禁用右鍵",
       grouping: true,
       duration: 2000,
     });
@@ -93,7 +93,7 @@ onMounted(() => {
     if (event.button == 1) {
       store.backgroundShow = !store.backgroundShow;
       ElMessage({
-        message: `已${store.backgroundShow ? "开启" : "退出"}壁纸展示状态`,
+        message: `已${store.backgroundShow ? "開啟" : "退出"}壁紙展示狀態`,
         grouping: true,
       });
     }
@@ -107,7 +107,7 @@ onMounted(() => {
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
+  const title1 = "Rinshiko の HomePage";
   const title2 = `
  _____ __  __  _______     ____     __
 |_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
