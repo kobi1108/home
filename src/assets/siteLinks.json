@@ -5,33 +5,33 @@
     "link": "https://blog.rinshiko.com/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "icon": "AiResults",
+    "name": "OpenAI",
+    "link": "https://chat.openai.com/"
   },
   {
     "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "name": "Music",
+    "link": "https://music.youtube.com/"
   },
   {
-    "icon": "Compass",
-    "name": "起始页",
-    "link": "https://nav.imsyy.top/"
+    "icon": "CompassOutline",
+    "name": "起始頁（開發中）",
+    "link": "https://www.google.com/"
   },
   {
-    "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "icon": "ClockAlarm24Regular",
+    "name": "番茄鐘",
+    "link": "https://pomofocus.io/"
   },
   {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
+    "icon": "AppsListDetail24Regular",
+    "name": "新番表",
+    "link": "https://acgsecrets.hk/bangumi/"
   },
   {
-    "icon": "LaptopCode",
-    "name": "站点监测",
+    "icon": "BookOpen24Regular",
+    "name": "BOOK☆WALKER",
     "link": "https://status.imsyy.top/"
   }
 ]
