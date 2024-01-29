@@ -1,35 +1,35 @@
-// scss 全局变量
+// scss 全局變量
 
-// 响应式布局
+// 響應式佈局
 @mixin changeWidth($maxWidth: 1200px) {
   .container {
     max-width: $maxWidth;
   }
 }
 
-// 首次调用
+// 首次調用
 @include changeWidth;
 
-/* 小于1380px时 */
+/* 小於1380px時 */
 @media (max-width: 1380px) {
   .el-radio-group {
     justify-content: center !important;
   }
 }
 
-/* 小于1280px时 */
+/* 小於1280px時 */
 @media (max-width: 1280px) {
   @include changeWidth($maxWidth: 1100px);
 }
 
-/* 小于992px时 */
+/* 小於992px時 */
 @media (max-width: 992px) {
   @include changeWidth($maxWidth: 900px);
 }
 
-/* 小于720px时 */
+/* 小於720px時 */
 @media (max-width: 720px) {
-  // 隐藏元素
+  // 隱藏元素
   .xs-hidden {
     display: none;
   }
