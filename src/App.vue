@@ -109,12 +109,16 @@ onMounted(() => {
   const styleContent = "color: rgb(30,152,255);";
   const title1 = "Rinshiko の HomePage";
   const title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
-  | | | |\\/| |\\___ \\  \\   /    \\   /
- _| |_| |  | |____) |  | |      | |
-|_____|_|  |_|_____/   |_|      |_|`;
+
+      _           _     _ _         
+     (_)         | |   (_) |        
+ _ __ _ _ __  ___| |__  _| | _____  
+| '__| | '_ \/ __| '_ \| | |/ / _ \ 
+| |  | | | | \__ \ | | | |   < (_) |
+|_|  |_|_| |_|___/_| |_|_|_|\_\___/ 
+                                    
+                                    
+`;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });
