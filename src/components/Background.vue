@@ -17,7 +17,7 @@
         :href="bgUrl"
         target="_blank"
       >
-        下载壁纸
+        下載壁紙
       </a>
     </Transition>
   </div>
@@ -61,16 +61,16 @@ const imgLoadComplete = () => {
 
 // 图片动画完成
 const imgAnimationEnd = () => {
-  console.log("壁纸加载且动画完成");
+  console.log("壁紙加載且動畫完成");
   // 加载完成事件
   emit("loadComplete");
 };
 
 // 图片显示失败
 const imgLoadError = () => {
-  console.error("壁纸加载失败：", bgUrl.value);
+  console.error("壁紙加載失敗：", bgUrl.value);
   ElMessage({
-    message: "壁纸加载失败，已临时切换回默认",
+    message: "壁紙加載失敗，已臨時切換回默認",
     icon: h(Error, {
       theme: "filled",
       fill: "#efefef",
