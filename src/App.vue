@@ -59,7 +59,7 @@ const loadComplete = () => {
   nextTick(() => {
     // 欢迎提示
     helloInit();
-    // 默哀模式
+    // 節日模式
     checkDays();
   });
 };
