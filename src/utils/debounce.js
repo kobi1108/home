@@ -1,12 +1,11 @@
-// 防抖
 let timeout;
 
 function debounce(func, wait = 300, immediate = false) {
-  // 清除定时器
+  // 清楚定時器
   if (timeout !== null) {
     clearTimeout(timeout);
   }
-  // 立即执行
+  // 立即執行
   if (immediate) {
     var callNow = !timeout;
     timeout = setTimeout(function () {
