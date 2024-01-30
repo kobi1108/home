@@ -46,6 +46,7 @@ import { Icon } from "@vicons/utils";
 import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正確的類別
 import { BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsList24Regular, BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
   import { AiResults } from "@vicons/carbon"; // 注意使用正確的類別
+  import { CompassOutlined } from "@vicons/antd/CompassOutlined"; // 注意使用正確的類別
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper";
@@ -68,7 +69,7 @@ const siteIcon = {
   Blog,
   AiResults,
   CompactDisc,
-  CompassNorthwest24Regular,
+  CompassOutlined,
   ClockAlarm24Regular,
   AppsListDetail24Regular,
   BookOpen24Regular,
