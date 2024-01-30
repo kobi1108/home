@@ -14,7 +14,7 @@
         @click="store.musicOpenState = true"
       >
         <music-menu theme="filled" size="18" fill="#efefef" />
-        <span>打開音樂播放器</span>
+        <span>打開音樂播放器（開發中）</span>
       </div>
     </Transition>
     <!-- 句子内容 -->
