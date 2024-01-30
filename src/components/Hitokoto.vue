@@ -6,7 +6,7 @@
     @mouseleave="openMusicShow = false"
     @click.stop
   >
-    <!-- 打开音乐面板 -->
+    <!-- 打开音樂面板 -->
     <Transition name="el-fade-in-linear">
       <div
         class="open-music"
@@ -17,11 +17,11 @@
         <span>打開音樂播放器</span>
       </div>
     </Transition>
-    <!-- 一言内容 -->
+    <!-- 句子内容 -->
     <Transition name="el-fade-in-linear" mode="out-in">
-      <div :key="hitokotoData.text" class="content" @click="updateHitokoto">
-        <span class="text">{{ hitokotoData.text }}</span>
-        <span class="from">-「&nbsp;{{ hitokotoData.from }}&nbsp;」</span>
+      <div :key="hitokotoData.sentences[hitokotoData.current].text" class="content" @click="updateHitokoto">
+        <span class="text">{{ hitokotoData.sentences[hitokotoData.current].text }}</span>
+        <span class="from">-「&nbsp;{{ hitokotoData.sentences[hitokotoData.current].from }}&nbsp;」</span>
       </div>
     </Transition>
   </div>
@@ -29,50 +29,47 @@
 
 <script setup>
 import { MusicMenu, Error } from "@icon-park/vue-next";
-import { getHitokoto } from "@/api";
 import { mainStore } from "@/store";
 import debounce from "@/utils/debounce.js";
 
 const store = mainStore();
 
-// 开启音乐面板按钮显隐
+// 開啟音樂面板按鈕顯隱
 const openMusicShow = ref(false);
 
-// 一言数据
+// 句子數據
 const hitokotoData = reactive({
-  text: "這裏應該顯示一句話",
-  from: "Rinshiko",
+  sentences: [
+    { text: "您的第一句話", from: "來源1" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    { text: "您的第二句話", from: "來源2" },
+    // 在這裡添加更多句子
+  ],
+  current: 0, // 當前顯示的句子索引
 });
 
-// 获取一言数据
-const getHitokotoData = async () => {
-  try {
-    const result = await getHitokoto();
-    hitokotoData.text = result.hitokoto;
-    hitokotoData.from = result.from;
-  } catch (error) {
-    ElMessage({
-      message: "句子獲取失敗",
-      icon: h(Error, {
-        theme: "filled",
-        fill: "#efefef",
-      }),
-    });
-    hitokotoData.text = "這裏應該顯示一句話";
-    hitokotoData.from = "Rinshiko";
-  }
-};
-
-// 更新一言数据
+// 更新句子数据
 const updateHitokoto = () => {
-  // 防抖
   debounce(() => {
-    getHitokotoData();
+    hitokotoData.current = Math.floor(Math.random() * hitokotoData.sentences.length);
   }, 500);
 };
 
 onMounted(() => {
-  getHitokotoData();
+  updateHitokoto();
 });
 </script>
 
