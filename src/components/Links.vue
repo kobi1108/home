@@ -43,7 +43,8 @@
 <script setup>
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑選並在此處引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode,BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsList24Regular, BookOpen24Regular } from "@vicons/fa"; // 注意使用正確的類別
+import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正確的類別
+  import { BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsList24Regular, BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper";
