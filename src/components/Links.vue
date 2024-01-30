@@ -43,11 +43,7 @@
 <script setup>
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑選並在此處引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode} from "@vicons/fa"; // 注意使用正確的類別
-import { AiResults } from "@vicons/carbon"; // 注意使用正確的類別
-import { CompassOutline } from "@vicons/ionicons5"; // 注意使用正確的類別
-import { ClockAlarm24Regular,AppsListDetail24Regular,BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
-
+import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode,BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsList24Regular, BookOpen24Regular } from "@vicons/fa"; // 注意使用正確的類別
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper";
@@ -68,9 +64,9 @@ const siteLinksList = computed(() => {
 // 網站連結圖標
 const siteIcon = {
   Blog,
-  AiResults,
+  BrainCircuit24Regular,
   CompactDisc,
-  CompassOutline,
+  CompassNorthwest24Regular,
   ClockAlarm24Regular,
   AppsListDetail24Regular,
   BookOpen24Regular,
