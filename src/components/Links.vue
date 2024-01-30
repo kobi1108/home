@@ -6,7 +6,7 @@
       </Icon>
       <span class="title">網站列表</span>
     </div>
-    <!-- 网站列表 -->
+    <!-- 網站列表 -->
     <Swiper
       v-if="siteLinks[0]"
       :modules="[Pagination, Mousewheel]"
@@ -42,11 +42,11 @@
 
 <script setup>
 import { Icon } from "@vicons/utils";
-// 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode} from "@vicons/fa"; // 注意使用正确的类别
-import { AiResults } from "@vicons/carbon"; // 注意使用正确的类别
-import { CompassOutline } from "@vicons/ionicons5"; // 注意使用正确的类别
-import { ClockAlarm24Regular,AppsListDetail24Regular,BookOpen24Regular } from "@vicons/fluent"; // 注意使用正确的类别
+// 可前往 https://www.xicons.org 自行挑選並在此處引入
+import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode} from "@vicons/fa"; // 注意使用正確的類別
+import { AiResults } from "@vicons/carbon"; // 注意使用正確的類別
+import { CompassOutline } from "@vicons/ionicons5"; // 注意使用正確的類別
+import { ClockAlarm24Regular,AppsListDetail24Regular,BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
 
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -55,7 +55,7 @@ import siteLinks from "@/assets/siteLinks.json";
 
 const store = mainStore();
 
-// 计算网站链接
+// 計算網站連結
 const siteLinksList = computed(() => {
   const result = [];
   for (let i = 0; i < siteLinks.length; i += 6) {
@@ -65,7 +65,7 @@ const siteLinksList = computed(() => {
   return result;
 });
 
-// 网站链接圖標
+// 網站連結圖標
 const siteIcon = {
   Blog,
   AiResults,
@@ -76,7 +76,7 @@ const siteIcon = {
   BookOpen24Regular,
 };
 
-// 链接跳转
+// 連結跳轉
 const jumpLink = (data) => {
   if (data.name === "音樂" && store.musicClick) {
     if (typeof $openList === "function") $openList();
