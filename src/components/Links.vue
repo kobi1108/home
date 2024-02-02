@@ -30,7 +30,13 @@
               <Icon size="26">
                 <component :is="siteIcon[item.icon]" />
               </Icon>
+							<div v-if="index!=3">
               <span class="name text-hidden">{{ item.name }}</span>
+							</div>
+							<div v-else="index==3">
+								<p class="name text-hidden">{{item.name.slice(0,item.name.indexOf('('))}}</p>
+								<p class="name text-hidden" style="font-size:10px" align="center">{{item.name.slice(item.name.indexOf('('))}}</p>
+							</div>
             </div>
           </el-col>
         </el-row>
@@ -44,14 +50,14 @@
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑選並在此處引入
 import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正確的類別
-import { BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsList24Regular, BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
+import { BrainCircuit24Regular, CompassNorthwest24Regular, ClockAlarm24Regular, AppsListDetail24Regular, BookOpen24Regular } from "@vicons/fluent"; // 注意使用正確的類別
   import { AiResults } from "@vicons/carbon"; // 注意使用正確的類別
-  import { CompassOutlined } from "@vicons/antd/CompassOutlined"; // 注意使用正確的類別
+  import { CompassOutlined } from "@vicons/antd"; // 注意使用正確的類別
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper";
 import siteLinks from "@/assets/siteLinks.json";
-
+ 
 const store = mainStore();
 
 // 計算網站連結
