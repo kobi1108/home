@@ -5,6 +5,11 @@
     "link": "https://blog.rinshiko.com/"
   },
   {
+    "icon": "CompassOutlined",
+    "name": "起始頁(開發中)",
+    "link": "https://www.google.com/"
+  },
+  {
     "icon": "AiResults",
     "name": "OpenAI",
     "link": "https://chat.openai.com/"
@@ -13,11 +18,6 @@
     "icon": "CompactDisc",
     "name": "Music",
     "link": "https://music.youtube.com/"
-  },
-  {
-    "icon": "CompassOutlined",
-    "name": "起始頁（開發中）",
-    "link": "https://www.google.com/"
   },
   {
     "icon": "ClockAlarm24Regular",
@@ -32,6 +32,6 @@
   {
     "icon": "BookOpen24Regular",
     "name": "BOOK☆WALKER",
-    "link": "https://status.imsyy.top/"
+    "link": "https://www.bookwalker.com.tw/"
   }
 ]
